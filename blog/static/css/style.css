@@ -1,0 +1,106 @@
+/* cabeçalho da pagina */
+header{
+    background-image: url('https://www.adesivosdiletra.com.br/wp-content/uploads/2016/03/FAIXA-CABE%C3%87ALHO.png');
+    width: 1100px;
+    height: 200px;
+}
+
+header h1{
+    font-family: 'Lobster';
+    font-size: 80px;
+    padding: 55px 0px 0px 0px;
+    margin: 0px;
+    text-align: center;
+}
+/* Corpo da pagina */
+body{
+    border: 1px solid grey;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 1100px;
+    height: auto;
+    box-shadow: 0px 0px 30px 0px;
+    background-image: url('https://www.designbolts.com/wp-content/uploads/2013/02/Golf-Shirt-Grey-Seamless-Pattern-For-Website-Background.jpg');
+}
+/* Links de navegação */
+nav{
+    padding: 0px;
+    width: auto;
+}
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    height: 59px;
+    list-style: none;
+    background-color: grey;
+
+}
+nav ul li a{
+    color: black;
+    margin-right: 0px;
+    float: left;
+    background-color: grey;
+    padding: 17px;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    -ms-transition: -ms-transform .1s ease-in-out;
+    transition: transform .0s ease-in-out;
+
+}
+nav ul li a:hover{
+    color: black;
+    background-color: grey;
+    box-shadow: 0px 0px 20px 1px;
+    transform: rotate(0deg) scale(1.2);
+    -ms-transform: rotate(0deg) scale(1.2);
+    -webkit-transform: rotate(0deg) scale(1.2);
+}
+a:link{
+    text-decoration: none;
+    font-size: 18px;
+
+}
+li.login{
+    float: right;
+
+}
+/* Main onde fica todo conteudo da pagina */
+main{
+    background-color: #fff;
+    padding: 50px;
+
+}
+article{
+    padding: auto;
+    margin: auto;
+}
+
+/* Conteudo do post */
+div.post h2{
+    font-family: 'Lobster';
+    font-size: 50px;
+    padding: 10px;
+    margin: 0px;
+
+}
+div.post a{
+    font-family: 'Lobster';
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+div.post{
+    width: auto;
+
+}
+/* Final da pagina onde fica os Créditos etc */
+footer{
+    background-color: white;
+    padding: 0.1px;
+    margin: 0px;
+}
+footer p{
+    text-align: center;
+}
