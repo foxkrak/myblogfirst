@@ -42,6 +42,8 @@ def post_edit(request, pk):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
+    # levei uma vida pra descobrir o erro que estava dando na pagina post_edit with keyword arguments '{'pk': ''}' not found. 1 pattern(s)
+    # eu so precisava declarar a variavel post como declarado a baixo, para que o template pudesse usar, assim o botão delete funcionaria!
     return render(request, 'blog/post_edit.html', {'form': form, 'post': post})
 
 @login_required()
