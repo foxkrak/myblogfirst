@@ -48,7 +48,12 @@ def post_edit(request, pk):
 def post_del(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    return render(request, 'blog/post_list.html', {'post': post, 'posts': posts})
+    # Sou meio leigo, entao ficou esse code feio ai, mas ja ajeitei pensando um pouco mais.!
+    # posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    # return render(request, 'blog/post_list.html', {'post': post, 'posts': posts})
+    #
+    # Esse é o codigo certo!
+    return post_lint(request)
+    # somente isso..
 
 # Create your views here.
