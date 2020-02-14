@@ -53,7 +53,7 @@ def post_del(request, pk):
     # return render(request, 'blog/post_list.html', {'post': post, 'posts': posts})
     #
     # Esse é o codigo certo!
-    return post_lint(request)
+    return post_list(request)
     # somente isso..
 
 # Create your views here.
