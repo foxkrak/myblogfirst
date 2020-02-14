@@ -54,4 +54,6 @@ def post_del(request, pk):
     post.delete()
     return post_list(request)
 
+
+
 # Create your views here.
