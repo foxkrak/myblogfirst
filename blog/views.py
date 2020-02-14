@@ -14,6 +14,10 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
+def atividades(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    return render(request, 'blog/atividades.html', {'posts': posts})
+
 
 @login_required()
 def post_new(request):
@@ -48,7 +52,6 @@ def post_edit(request, pk):
 def post_del(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    return render(request, 'blog/post_list.html', {'post': post, 'posts': posts})
+    return post_list(request)
 
 # Create your views here.

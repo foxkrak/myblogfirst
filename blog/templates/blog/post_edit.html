@@ -1,11 +1,22 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h2>New post</h2>
+<div class="newpost">
+    <h2>Editar Postagem</h2>
     <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-        <a id="format-buttom" class="btn btn-danger" href="{% url 'post_del' pk=post.pk %}">Delete</a>
+            <table class="newpt">
+                    <tr>
+                        <td>Título:</td>
+                    </tr>
+                    <tr><td>{{ form.title }}</td></tr>
+                    <tr>
+                    <tr>
+                        <td>Texto:</td>
+                    </tr>
+                    <tr><td>{{ form.text }}</td></tr>
+                <tr><td><button type="submit" class="save btn btn-default">Salvar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="format-buttom" class="btn btn-danger" href="{% url 'post_del' pk=post.pk %}">Delete</a></td></tr>
+            </table>
     </form>
+</div>
 
 {% endblock %}

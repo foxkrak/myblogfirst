@@ -8,5 +8,6 @@ urlpatterns = [
     path('post/new', views.post_new, name='post_new'),
     path('post/edit/<int:pk>', views.post_edit, name='post_edit'),
     path('del/<int:pk>', views.post_del, name='post_del'),
+    path('atividades', views.atividades, name='atividades'),
     path('accounts/', include('django.contrib.auth.urls')),
 ]

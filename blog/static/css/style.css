@@ -104,3 +104,61 @@ footer{
 footer p{
     text-align: center;
 }
+/* css do login */
+
+div.login{
+    padding-top: 70px;
+    padding: auto;
+    margin: auto;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0px 0px 20px 2px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-image: url('https://www.urbanarts.com.br/imagens/produtos/078756/0/Ampliada/abstract-geometric-background-v.jpg');
+}
+table.login tr td{
+    padding: 0px 10px 10px 10px;
+    margin: auto;
+    text-align: center;
+}
+table.login{
+    padding: 500px;
+    margin: auto;
+
+}
+div.botao-login{
+    width: 205px;
+    margin: auto;
+}
+div.botao-login tr td{
+    padding: 5px;
+    text-align: center;
+
+}
+/* CSS da nova Postagem */
+div.newpost{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 2px;
+    background-image: url('https://www.urbanarts.com.br/imagens/produtos/078756/0/Ampliada/abstract-geometric-background-v.jpg');
+}
+div.newpost table{
+    margin: auto;
+    width: 400px;
+    margin-bottom: 50px;
+}
+div.newpost tr td{
+    padding-top: 5px;
+    width: 500px;
+
+}
+div.newpost h2{
+    font-family: 'Lobster';
+    font-size: 40px;
+}
