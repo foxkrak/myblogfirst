@@ -18,10 +18,10 @@
 <nav class="links">
     <ul>
         <li>
-            <a href="../../home">Home</a>
+            <a href="../../home" {% if request.path == '/home' %} class="active"{% endif %}>Home</a>
         </li>
         <li>
-            <a href="atividades">Atividades</a>
+            <a href="../../atividades" {% if request.path == '/atividades' %} class="active"{% endif %}>Atividades</a>
         </li>
         {% if user.is_authenticated == False %}
             <li class="login">
@@ -35,7 +35,7 @@
         {% endif %}
         {% if user.is_authenticated %}
             <li class="login">
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_new' %}" {% if request.path == '/post/new' %} class="active"{% endif %}><span class="glyphicon glyphicon-plus"></span></a>
             </li>
         {% endif %}
 

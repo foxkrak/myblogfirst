@@ -64,7 +64,9 @@ a:link{
 }
 li.login{
     float: right;
-
+}
+.active{
+    background-color: #d8d8d8;
 }
 /* Main onde fica todo conteudo da pagina */
 main{

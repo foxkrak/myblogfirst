@@ -5,8 +5,8 @@ from django.utils import timezone
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    choice =(('at','at'),('pr','pr'),('ca','ca'),('se','se'))
-    tipe = models.CharField(max_length=2,choices=choice)
+    post_tipo =[('AT','Atividades'),('PR','Projetos'),('SB', 'Sobre')]
+    tipo = models.CharField(max_length=2, choices=post_tipo, default='AT')
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
