@@ -18,14 +18,14 @@
 <nav class="links">
     <ul>
         <li>
-            <a href="../../home" {% if request.path == '/home' %} class="active"{% endif %}>Home</a>
+            <a href="../../home" {% if request.path == '/home' or request.path == '/' %} class="active"{% endif %}>Home</a>
         </li>
         <li>
             <a href="../../atividades" {% if request.path == '/atividades' %} class="active"{% endif %}>Atividades</a>
         </li>
         {% if user.is_authenticated == False %}
             <li class="login">
-                <a href="{% url 'login' %}">Logar</a>
+                <a href="{% url 'login' %}" {% if request.path == '/accounts/login/' %} class="active"{% endif %}>Logar</a>
             </li>
         {% endif %}
         {% if user.is_authenticated %}

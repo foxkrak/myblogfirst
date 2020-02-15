@@ -66,7 +66,10 @@ li.login{
     float: right;
 }
 .active{
-    background-color: #d8d8d8;
+    box-shadow: 0px 0px 20px 1px;
+    transform: rotate(0deg) scale(1.1);
+    -ms-transform: rotate(0deg) scale(1.1);
+    -webkit-transform: rotate(0deg) scale(1.1);
 }
 /* Main onde fica todo conteudo da pagina */
 main{
@@ -138,6 +141,12 @@ div.botao-login tr td{
     text-align: center;
 
 }
+.erros{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+}
 /* CSS da nova Postagem */
 div.newpost{
     margin: auto;
@@ -163,4 +172,7 @@ div.newpost tr td{
 div.newpost h2{
     font-family: 'Lobster';
     font-size: 40px;
+}
+div.newpost button{
+    font-size: 18px;
 }
