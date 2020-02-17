@@ -2,12 +2,29 @@
 
 {% block content %}
     {% for post in posts  %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
+<div class="post">
+        <div class="post2">
+            <table class="post1">
+                <tr>
+                    <td rowspan="4" class="img"><img src="{{ post.author.last_name }}" width="100" height="100"></td>
+                    <td class="tla">Autor:</td>
+                </tr>
+                <tr>
+                    <td class="tl">&nbsp;&nbsp;&nbsp;{{ post.author }}</td>
+                </tr>
+                <tr>
+                    <td class="tla">Publicado em:</td>
+                </tr>
+                <tr>
+                    <td class="tl">&nbsp;&nbsp;&nbsp;{{ post.published_date }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mains">
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
+</div>
     {% endfor %}
+
 {% endblock %}

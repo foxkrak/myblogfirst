@@ -2,15 +2,32 @@
 
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
         {% if user.is_authenticated %}
             <a class="btn btn-default" href="{% url 'post_edit' post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        {% if post.published_date %}
+        <div class="post2">
+            <table class="post1">
+                <tr>
+                    <td rowspan="4" class="img"><img src="{{ post.author.last_name }}" width="100" height="100"></td>
+                    <td class="tla">Autor:</td>
+                </tr>
+                <tr>
+                    <td class="tl">&nbsp;&nbsp;&nbsp;{{ post.author }}</td>
+                </tr>
+                <tr>
+                    <td class="tla">Publicado em:</td>
+                </tr>
+                <tr>
+                    <td class="tl">&nbsp;&nbsp;&nbsp;{{ post.published_date }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mains">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+        {% endif %}
     </div>
+
 {% endblock %}

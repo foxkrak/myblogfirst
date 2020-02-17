@@ -15,10 +15,10 @@ header h1{
 /* Corpo da pagina */
 body{
     border: 1px solid grey;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
+    margin-bottom: 50px;
     width: 1100px;
     height: auto;
     box-shadow: 0px 0px 30px 0px;
@@ -74,7 +74,9 @@ li.login{
 /* Main onde fica todo conteudo da pagina */
 main{
     background-color: #fff;
-    padding: 50px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+
 
 }
 article{
@@ -150,7 +152,7 @@ div.botao-login tr td{
 /* CSS da nova Postagem */
 div.newpost{
     margin: auto;
-    padding: auto;
+    margin-top: 20px;
     text-align: center;
     height: auto;
     width: 500px;
@@ -175,4 +177,51 @@ div.newpost h2{
 }
 div.newpost button{
     font-size: 18px;
+}
+/* postagem */
+
+div.post2{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 6px;
+    background-image: url('https://www.urbanarts.com.br/imagens/produtos/078756/0/Ampliada/abstract-geometric-background-v.jpg');
+    border-radius: 15px;
+    width: 360px;
+    height: 120px;
+    border: 2px solid grey;
+    box-shadow: 0px 0px 20px 2px;
+
+}
+.post1 td.tl{
+    border: 2px solid grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.post1 td.tla{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.post1 td.img{
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.post1{
+    padding-top: 10px;
+    margin: auto;
+}
+.mains{
+    border: 2px solid grey;
+    width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 2px;
+    background-image: url('https://images-submarino.b2w.io/produtos/01/00/image/84744/3/84744396_1GG.jpg');
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+main{
+    background: url('https://image.freepik.com/free-vector/bright-background-with-dots_1055-3132.jpg');
+    background-size:100%;
 }
